@@ -1,13 +1,16 @@
 {
   "name": "vite-node-boilerplate",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "concurrently \"yarn run serverdev\" \"yarn run clientdev\"",
     "build": "yarn run build -w client",
     "clientdev": "yarn workspace client run dev",
     "serverdev": "yarn workspace server run dev",
-    "heroku-postbuild": "yarn run build"
+    "heroku-postbuild": "yarn run build",
+    "testui": "npx vitest watch --ui --threads false",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "workspaces": [
     "./src/*"
@@ -26,6 +29,7 @@
     "react-spinners": "^0.11.0"
   },
   "devDependencies": {
+    "@vitest/ui": "^0.10.2",
     "eslint": "^7.11.0",
     "eslint-config-airbnb": "^19.0.0",
     "eslint-plugin-import": "^2.25.3",
@@ -33,6 +37,7 @@
     "eslint-plugin-react": "^7.27.0",
     "eslint-plugin-react-hooks": "^4.4.0",
     "nodemon": "^2.0.15",
-    "vite": "^2.9.5"
+    "vite": "^2.9.5",
+    "vitest": "^0.10.2"
   }
 }
