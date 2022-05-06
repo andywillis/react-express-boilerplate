@@ -39,5 +39,6 @@
     "nodemon": "^2.0.15",
     "vite": "^2.9.5",
     "vitest": "^0.10.2"
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0"
 }

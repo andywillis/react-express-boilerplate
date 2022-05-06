@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node index"
-  }
+    "dev": "nodemon index"
+  },
+  "license": "CC-BY-NC-SA-4.0"
 }
