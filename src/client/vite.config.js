@@ -6,10 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/tag': 'http://localhost:4000',
-      '/update': 'http://localhost:4000',
-      '/check': 'http://localhost:4000',
-      '/tags': 'http://localhost:4000'
+      '/temp': 'http://localhost:4000'
     }
   },
   build: {
