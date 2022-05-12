@@ -16,6 +16,7 @@ const __dirname = dirname(__filename);
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.json());
 
 const port = process.env.PORT || 4000;
 
@@ -25,6 +26,11 @@ app.listen(port, () => {
 
 app.get('/test', (req, res) => {
   res.send('Hallo');
+});
+
+app.post('/update', (req, res) => {
+  console.log(req.body);
+  res.sendStatus(200);
 });
 
 app.get('/', (req, res) => {

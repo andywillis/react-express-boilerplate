@@ -1,4 +1,4 @@
-# vite-node-boilerplate
+# react-express-boilerplate
 
 ## Install
 
@@ -8,7 +8,8 @@
 
 ## Notes
 
-Uses yarn workspaces to manage the packages.
+- Uses React v17. Too many packages have peer dependencies on v16 and 17 so this is the safest way to develop at the moment.
+- Uses yarn workspaces to manage the packages.
 
 ## Licence
 
